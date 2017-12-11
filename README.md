@@ -1,2 +1,2 @@
 # Pomodoro-Clock
-# Pomodoro-Clock
+# A Javascript Pomodoro-Clock
