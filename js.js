@@ -172,10 +172,7 @@ var breakTimer = function(factor,c){
     $(filler).css("background", "linear-gradient(to top, "+color+" "+height+",#536359 "+height+")");
      
      var displayTime = transferFromSecondsToTime(--timeLapsed)
-     $(timetext).text(displayTime);
-     
-} 
+     $(timetext).text(displayTime);  
+};
 
-
-
-)
+});
