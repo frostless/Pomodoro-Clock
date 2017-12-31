@@ -7,7 +7,8 @@ $(document).ready(function () {
     var breakTime=$('#breaktime');
     var sessionTime=$('#sessiontime');
     var timetext=$('#timetext');
-    const colorPool=['#2d6fd8', '#7d7e84', '#9b258d', '#ba1665', '#8df449', '#bcaa98'] var color;
+    const colorPool=['#2d6fd8', '#7d7e84', '#9b258d', '#ba1665', '#8df449', '#bcaa98'];
+    var color;
     $('#breakminus,#sessionminus').on('click', function () {
         //should not response when timer is running
         if (state==1 || state==2) return; //reset per and timelapsed if session time changed
