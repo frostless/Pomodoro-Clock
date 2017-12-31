@@ -1,83 +1,77 @@
-body, html {
-    background-color: #536359;
+body,html {
+    background-color:#536359;
+}
+.wrapper{
+  overflow: auto;
+  width:50%;
+  margin:0 auto;
+  min-width:400px;
+}
+h1,p,span,button{
+  text-align:center;
+  color:#fff;
+  font-style:italic;
+}
+h1{
+  font-size:70px;
+  margin-bottom:30px;
 }
 
-.wrapper {
-    overflow: auto;
-    width: 50%;
-    margin: 0 auto;
-    min-width: 400px;
+
+button{
+  background-color:transparent;
+  border:none;
+  outline: none;
+ vertical-align:bottom;
+}
+p{
+  font-size:20px;
+}
+button,span{
+  font-size:30px;
+}
+span{
+/*   padding:10px; */
 }
 
-h1, p, span, button {
-    text-align: center;
-    color: #fff;
-    font-style: italic;
+.clockcontainer{
+
+ margin:10px auto;
+  position:relative;
+  width:300px;
+  height:300px;
+  border-radius: 100%;
+  border-color: black;
+  border:solid;
+}
+.clockcontainer:hover{
+  cursor:pointer;
 }
 
-h1 {
-    font-size: 70px;
-    text-align: center;
-    margin-bottom: 30px;
+.clocktext{
+  position: absolute;
+  text-align:center;
+  color:white;
 }
 
-button {
-    background-color: transparent;
-    border: none;
-    outline: none;
-    vertical-align: bottom;
+#sessiontext{
+  font-size:39px;
+  top:30%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+#timetext{
+  top:60%;
+  font-size:35px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
 }
 
-p {
-    font-size: 20px;
+#filler{
+  width: 100%; 
+  height: 100%;
+  border-radius: 100%;
 }
 
-button, span {
-    font-size: 30px;
-}
-
-/* span {
-    padding: 10px;
-} */
-
-.clockcontainer {
-    margin: 10px auto;
-    position: relative;
-    width: 300px;
-    height: 300px;
-    border-radius: 100%;
-    border-color: black;
-    border: solid;
-}
-
-.clockcontainer:hover {
-    cursor: pointer;
-}
-
-.clocktext {
-    position: absolute;
-    text-align: center;
-    color: white;
-}
-
-#sessiontext {
-    font-size: 39px;
-    top: 30%;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-}
-
-#timetext {
-    top: 60%;
-    font-size: 35px;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-}
-
-#filler {
-    width: 100%;
-    height: 100%;
-    border-radius: 100%;
-}
