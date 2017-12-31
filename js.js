@@ -32,7 +32,8 @@ $(document).ready(function () {
             $(ele).text(newTime);
         }
     }
-    ) $('#breakplus,#sessionplus').on('click', function () {
+    );
+    $('#breakplus,#sessionplus').on('click', function () {
         //when either timer is running
         if (state==1 || state==2) return; //reset per and timelapsed if session time changed
         if ($(this).attr('id')=="sessionplus") {
@@ -53,7 +54,8 @@ $(document).ready(function () {
             $(ele).text(newTime);
         }
     }
-    ) $('.clockcontainer').on('click', function () {
+    );
+    $('.clockcontainer').on('click', function () {
         //coule be  break factor or session factor
         var factor=state==0 || state==1 ? $(sessionTime).text(): $(breakTime).text();
         timeLapsed=timeLapsed > 0 ? timeLapsed: factor * 60; //if timer paused
@@ -85,7 +87,7 @@ $(document).ready(function () {
             , 1000);
         }
     }
-    ) //function to transfer seconds to time format
+    ); //function to transfer seconds to time format
     var transferFromSecondsToTime=function (seconds) {
         if (seconds <=0) return "00:00";
         var h=Math.floor(seconds / 3600) > 0 ? Math.floor(seconds / 3600): null;
